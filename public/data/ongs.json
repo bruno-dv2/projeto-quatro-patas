@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "nome": "Nome da ONG",
+    "subtitulo": "Exemplo: Amor em forma de Gato",
+    "localizacao": "Fortaleza, CE",
+    "descricao": "Fazemos um trabalho social TNR (capturar, castrar e devolver) de gatos que vivem em situação de rua e encaminhamos para adoção os animais que se adaptam bem ao convívio doméstico.",
+    "tags": ["Instagram", "Facebook", "WhatsApp", "Site"],
+    "logo": "🐱"
+  },
+  {
+    "id": 2,
+    "nome": "Nome da ONG",
+    "subtitulo": "Exemplo: Banco de Sangue",
+    "localizacao": "Fortaleza, CE",
+    "descricao": "Somos um Hemocentro (banco de sangue) para cães e gatos que ajudam outros animais em casos de emergência e procedimentos cirúrgicos.",
+    "tags": ["Instagram", "Facebook", "WhatsApp", "Site"],
+    "logo": "🐱"
+  },
+  {
+    "id": 3,
+    "nome": "Nome da ONG",
+    "subtitulo": "Exemplo: Resgate e Adoção",
+    "localizacao": "Fortaleza, CE",
+    "descricao": "Fazemos o resgate e cuidamos de cães e gatos em situação de abandono e maus tratos, buscando dar uma segunda chance com uma família amorosa.",
+    "tags": ["Instagram", "Facebook", "WhatsApp"],
+    "logo": "🐕"
+  },
+  {
+    "id": 4,
+    "nome": "Nome da ONG",
+    "subtitulo": "Exemplo: Alimentação e Cuidados",
+    "localizacao": "Fortaleza, CE",
+    "descricao": "Nosso objetivo é dar dignidade aos cães e gatos em situação de rua através da alimentação natural e cuidados veterinários.",
+    "tags": ["Instagram", "WhatsApp", "Site"],
+    "logo": "🐕"
+  }
+]

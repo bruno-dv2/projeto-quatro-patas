@@ -1,6 +1,7 @@
 'use client';
 
 import { GAEvent } from './GoogleAnalytics';
+import Image from 'next/image';
 
 export default function CardOngs({ ong }) {
   const coresTag = {
@@ -21,9 +22,9 @@ export default function CardOngs({ ong }) {
     
     // Aqui pode adicionar a lógica para abrir o link real
     // Por exemplo:
-    // if (ong.links && ong.links[socialNetwork.toLowerCase()]) {
-    //   window.open(ong.links[socialNetwork.toLowerCase()], '_blank');
-    // }
+     if (ong.links && ong.links[socialNetwork.toLowerCase()]) {
+       window.open(ong.links[socialNetwork.toLowerCase()], '_blank');
+     }
   };
 
   return (
@@ -33,7 +34,7 @@ export default function CardOngs({ ong }) {
     >
       {/* Logo e Nome */}
       <div className="flex items-center gap-4 mb-4">
-        <div className="text-5xl">{ong.logo}</div>
+        <Image src={ong.logo} alt={`Logo da ${ong.nome}`}  width={64} height={64} className="rounded-full" />
         <div>
           <h3 className="text-2xl font-bold text-azul-dark">{ong.nome}</h3>
           <p className="text-sm text-gray-600">{ong.subtitulo}</p>

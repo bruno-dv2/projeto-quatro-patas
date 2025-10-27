@@ -1,60 +1,60 @@
 [
   {
     "id": 1,
-    "nome": "Gatinhos de Fortaleza",
+    "nome": "Animais Universitários",
     "subtitulo": "Amor em forma de Gato",
-    "localizacao": "Fortaleza, CE - Aldeota",
-    "descricao": "Fazemos um trabalho social TNR (capturar, castrar e devolver) de gatos que vivem em situação de rua e encaminhamos para adoção os animais que se adaptam bem ao convívio doméstico.",
+    "localizacao": "Fortaleza, CE - Pici",
+    "descricao": "Projeto voluntário de assistência aos animais abandonados no Campus do Pici",
     "tags": ["Instagram", "Facebook", "WhatsApp", "Site"],
-    "logo": "🐱",
+    "logo": "/ongslogos/animaisuniversitarioslogo.png",
     "links": {
-      "instagram": "https://instagram.com/gatinhosfortaleza",
-      "facebook": "https://facebook.com/gatinhosfortaleza",
-      "whatsapp": "https://wa.me/5585999999999",
-      "site": "https://gatinhosfortaleza.org.br"
+      "instagram": "https://www.instagram.com/animaisuniversitarios",
+      "facebook": "",
+      "whatsapp": "85989079977",
+      "site": "https://drive.google.com/drive/folders/1BfZ9-hiQEn8v1lMf_y7eCtRdcrIqJAqF"
     },
     "contatos": {
       "email": "contato@gatinhosfortaleza.org",
-      "telefone": "(85) 98888-8888"
+      "telefone": "(85) 98907-9977"
     },
     "doacoes": {
-      "pix": "12.345.678/0001-00",
-      "banco": "Banco do Brasil - Ag: 1234-5 C/C: 12345-6"
+      "pix": "XX.345.678/0001-XX",
+      "banco": "Banco do Brasil - Ag: 1234-X C/C: 12345-6"
     }
   },
   {
     "id": 2,
-    "nome": "Hemovet Ceará",
-    "subtitulo": "Banco de Sangue Animal",
+    "nome": "Adote um Bigode",
+    "subtitulo": "Adote um Bigode!",
     "localizacao": "Fortaleza, CE - Meireles",
-    "descricao": "Somos um Hemocentro (banco de sangue) para cães e gatos que ajudam outros animais em casos de emergência e procedimentos cirúrgicos. Salvamos vidas diariamente!",
+    "descricao": "Alimentamos +100 animais, castramos e promovemos adoção dos que cruzam nosso caminho",
     "tags": ["Instagram", "Facebook", "WhatsApp", "Site"],
-    "logo": "🩸",
+    "logo": "/ongslogos/adoteumbigodelogo.png",
     "links": {
-      "instagram": "https://instagram.com/hemovetce",
-      "facebook": "https://facebook.com/hemovetceara",
+      "instagram": "https://www.instagram.com/adoteumbigodeceara",
+      "facebook": "https://facebook.com/",
       "whatsapp": "https://wa.me/5585988888888",
-      "site": "https://hemovet.com.br"
+      "site": "https://www.amazon.com.br/hz/wishlist/ls/1SHZVMK90W9O4?ref_=wl_share"
     },
     "contatos": {
-      "email": "contato@hemovet.com.br",
+      "email": "adoteumbigodece@gmail.com",
       "telefone": "(85) 3333-3333"
     },
     "doacoes": {
-      "pix": "hemovet@email.com",
-      "banco": "Caixa Econômica - Ag: 0001 C/C: 1234-5"
+      "pix": "@email.com",
+      "banco": "Caixa Econômica - Ag: 0001 C/C: 1234-X"
     }
   },
   {
     "id": 3,
-    "nome": "Cão Sem Dono",
-    "subtitulo": "Resgate e Adoção",
-    "localizacao": "Fortaleza, CE - Messejana",
+    "nome": "ONG Abrace",
+    "subtitulo": "ABRACE - Uma causa animal 🐶🐱",
+    "localizacao": "Fortaleza e Eusébio, CE ",
     "descricao": "Fazemos o resgate e cuidamos de cães e gatos em situação de abandono e maus tratos, buscando dar uma segunda chance com uma família amorosa.",
     "tags": ["Instagram", "Facebook", "WhatsApp"],
-    "logo": "🐕",
+    "logo": "/ongslogos/ongabracelogo.png",
     "links": {
-      "instagram": "https://instagram.com/caosemdono",
+      "instagram": "https://www.instagram.com/ong.abrace",
       "facebook": "https://facebook.com/caosemdono",
       "whatsapp": "https://wa.me/5585977777777"
     },
@@ -69,19 +69,63 @@
   },
   {
     "id": 4,
-    "nome": "Patinhas Carentes",
+    "nome": "Dory Cats",
     "subtitulo": "Alimentação e Cuidados",
-    "localizacao": "Fortaleza, CE - Centro",
-    "descricao": "Nosso objetivo é dar dignidade aos cães e gatos em situação de rua através da alimentação natural e cuidados veterinários. Atendemos mais de 200 animais mensalmente.",
+    "localizacao": "Fortaleza, CE - ",
+    "descricao": "Gatos resgatados para adoção. Não recebemos animais",
     "tags": ["Instagram", "WhatsApp", "Site"],
-    "logo": "🐾",
+    "logo": "/ongslogos/dorycatslogo.jpg",
     "links": {
-      "instagram": "https://instagram.com/patinhascarentes",
+      "instagram": "https://www.instagram.com/dorycats",
       "whatsapp": "https://wa.me/5585966666666",
       "site": "https://patinhascarentes.org"
     },
     "contatos": {
-      "email": "ajude@patinhascarentes.org",
+      "email": "dorycats10@gmail.com",
+      "telefone": "(85) 96666-6666"
+    },
+    "doacoes": {
+      "pix": "patinhas@pix.com",
+      "banco": "Itaú - Ag: 8901 C/C: 23456-7"
+    }
+  },
+  {
+    "id": 5,
+    "nome": "Rede de Resgate",
+    "subtitulo": "❤️ Atuamos com amor pela causa animal",
+    "localizacao": "Fortaleza, CE - ",
+    "descricao": "🔗 Conectamos quem pode ajudar a quem precisa 🚫 Sem abrigo",
+    "tags": ["Instagram", "WhatsApp", "Site"],
+    "logo": "/ongslogos/redederesgatelogo.jpg",
+    "links": {
+      "instagram": "https://www.instagram.com/redederesgate_24",
+      "whatsapp": "https://wa.me/5585966666666",
+      "site": "https://rifa.digital/s/gZ7Xy8qBK9g?fbclid=PAZXh0bgNhZW0CMTEAAafLZUxc88iqk5QuqMdt3Vf3B_AA-ZqNVmfQN_eaUmtrTVjIiXa1qkhpi-mGRA_aem_yfMPmf4LLFoho81hUOZguA"
+    },
+    "contatos": {
+      "email": "rederesgate24@outlook.com",
+      "telefone": "(85) 96666-6666"
+    },
+    "doacoes": {
+      "pix": "patinhas@pix.com",
+      "banco": "Itaú - Ag: 8901 C/C: 23456-7"
+    }
+  },
+  {
+    "id": 6,
+    "nome": "Causa Pet",
+    "subtitulo": "Instituto Causa Pet® | Lar Temporário",
+    "localizacao": "Fortaleza, CE ",
+    "descricao": "⛑1.485 Resgates 🐶🐱1.241 Adoções 📈1.816 Castrações",
+    "tags": ["Instagram", "WhatsApp", "Site"],
+    "logo": "/ongslogos/causapetlogo.webp",
+    "links": {
+      "instagram": "https://www.instagram.com/causapet",
+      "whatsapp": "https://wa.me/5585966666666",
+      "site": "https://rifa.digital/s/K59lxIAuiDZ"
+    },
+    "contatos": {
+      "email": "queroajudar@causapet.com",
       "telefone": "(85) 96666-6666"
     },
     "doacoes": {

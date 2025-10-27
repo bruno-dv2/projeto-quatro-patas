@@ -141,8 +141,8 @@ export default function Sobre() {
                     <Image
                         src={membro.foto}
                         alt={`Foto de ${membro.nome}`}
-                        layout="fill"
-                        objectFit="cover"
+                        fill
+                        className="object-cover"
                     />
                 </div>
 

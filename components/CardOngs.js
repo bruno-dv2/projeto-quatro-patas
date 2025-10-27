@@ -16,15 +16,47 @@ export default function CardOngs({ ong }) {
     GAEvent.clickOngCard(ong.nome, ong.id);
   };
 
-  // Rastrear clique nas redes sociais
-  const handleSocialClick = (socialNetwork) => {
+  // Formatar link do WhatsApp
+  const formatWhatsAppLink = (number) => {
+    if (!number) return null;
+
+    // Remove caracteres não numéricos
+    const cleanNumber = number.replace(/\D/g, '');
+
+    // Se já tem https://wa.me, retorna como está
+    if (number.startsWith('https://wa.me')) return number;
+    
+    // Adiciona código do Brasil se necessário
+    const formattedNumber = cleanNumber.startsWith('55') ? cleanNumber : `55${cleanNumber}`;
+    return `https://wa.me/${formattedNumber}`;
+  };
+
+  // Rastrear clique nas redes sociais e abrir link
+  const handleSocialClick = (e, socialNetwork) => {
+    e.stopPropagation(); // Evita duplo tracking do card
+    
+    // Registrar evento no GA
     GAEvent.clickOngSocial(ong.nome, socialNetwork);
     
-    // Aqui pode adicionar a lógica para abrir o link real
-    // Por exemplo:
-     if (ong.links && ong.links[socialNetwork.toLowerCase()]) {
-       window.open(ong.links[socialNetwork.toLowerCase()], '_blank');
-     }
+    // Abrir link correspondente
+    let link = null;
+    const networkKey = socialNetwork.toLowerCase();
+    
+    if (ong.links && ong.links[networkKey]) {
+      link = ong.links[networkKey];
+      
+      // Formatação especial para WhatsApp
+      if (socialNetwork === 'WhatsApp') {
+        link = formatWhatsAppLink(link);
+      }
+      
+      // Abrir em nova aba
+      if (link) {
+        window.open(link, '_blank', 'noopener,noreferrer');
+      }
+    } else {
+      console.warn(`Link não encontrado para ${socialNetwork}`, ong.links);
+    }
   };
 
   return (
@@ -34,7 +66,13 @@ export default function CardOngs({ ong }) {
     >
       {/* Logo e Nome */}
       <div className="flex items-center gap-4 mb-4">
-        <Image src={ong.logo} alt={`Logo da ${ong.nome}`}  width={64} height={64} className="rounded-full" />
+        <Image 
+          src={ong.logo} 
+          alt={`Logo da ${ong.nome}`}  
+          width={64} 
+          height={64} 
+          className="rounded-full object-cover"
+        />
         <div>
           <h3 className="text-2xl font-bold text-azul-dark">{ong.nome}</h3>
           <p className="text-sm text-gray-600">{ong.subtitulo}</p>
@@ -57,11 +95,9 @@ export default function CardOngs({ ong }) {
         {ong.tags.map((tag, index) => (
           <button
             key={index}
-            onClick={(e) => {
-              e.stopPropagation(); // Evita duplo tracking
-              handleSocialClick(tag);
-            }}
+            onClick={(e) => handleSocialClick(e, tag)}
             className={`${coresTag[tag]} text-white text-xs px-3 py-1 rounded-full font-semibold hover:opacity-90 transition`}
+            aria-label={`Abrir ${tag} da ${ong.nome}`}
           >
             {tag}
           </button>

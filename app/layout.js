@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import GoogleAnalytics from '@/components/GoogleAnalytics';
+import CookieBanner from '@/components/CookieBanner';
 import "./globals.css";
 
 const geistSans = Geist({
@@ -50,6 +51,9 @@ export default function RootLayout({ children }) {
         )}
         
         {children}
+        
+        {/* Cookie Banner */}
+        <CookieBanner />
       </body>
     </html>
   );

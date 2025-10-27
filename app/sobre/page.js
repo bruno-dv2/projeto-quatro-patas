@@ -67,7 +67,7 @@ export default function Sobre() {
 
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
             <div className="md:w-1/3 flex justify-center">
-              <Image src="/logo.svg" alt="4 Patas" width={200} height={200} />
+              <Image src="/logo.png" alt="4 Patas" width={200} height={200} />
             </div>
             <div className="md:w-2/3 space-y-4 text-center md:text-left">
               <p className="text-gray-700 leading-relaxed">

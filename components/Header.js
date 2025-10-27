@@ -31,9 +31,12 @@ export default function Header() {
           className="flex items-center gap-3 hover:opacity-80 transition"
           onClick={() => handleButtonClick('Logo Home')}
         >
-          <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-            <span className="text-2xl">🐾</span>
-          </div>
+          <Image 
+            src="/logo.png" 
+            alt="4 Patas Logo" 
+            width={40} 
+            height={40}
+          />
           <h1 className="text-2xl font-bold">4 Patas</h1>
         </Link>
         <Link 

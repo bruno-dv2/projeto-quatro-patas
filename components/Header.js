@@ -28,7 +28,7 @@ export default function Header() {
       <nav className="flex justify-between items-center px-8 md:px-64 py-4 bg-[#3B7DD6]">
         <Link 
           href="/" 
-          className="flex items-center gap-3 hover:opacity-80 transition"
+          className="flex items-center gap-3 hover:opacity-80 transition flex-shrink-0"
           onClick={() => handleButtonClick('Logo Home')}
         >
           <Image 

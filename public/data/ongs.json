@@ -1,38 +1,92 @@
 [
   {
     "id": 1,
-    "nome": "Nome da ONG",
-    "subtitulo": "Exemplo: Amor em forma de Gato",
-    "localizacao": "Fortaleza, CE",
+    "nome": "Gatinhos de Fortaleza",
+    "subtitulo": "Amor em forma de Gato",
+    "localizacao": "Fortaleza, CE - Aldeota",
     "descricao": "Fazemos um trabalho social TNR (capturar, castrar e devolver) de gatos que vivem em situação de rua e encaminhamos para adoção os animais que se adaptam bem ao convívio doméstico.",
     "tags": ["Instagram", "Facebook", "WhatsApp", "Site"],
-    "logo": "🐱"
+    "logo": "🐱",
+    "links": {
+      "instagram": "https://instagram.com/gatinhosfortaleza",
+      "facebook": "https://facebook.com/gatinhosfortaleza",
+      "whatsapp": "https://wa.me/5585999999999",
+      "site": "https://gatinhosfortaleza.org.br"
+    },
+    "contatos": {
+      "email": "contato@gatinhosfortaleza.org",
+      "telefone": "(85) 98888-8888"
+    },
+    "doacoes": {
+      "pix": "12.345.678/0001-00",
+      "banco": "Banco do Brasil - Ag: 1234-5 C/C: 12345-6"
+    }
   },
   {
     "id": 2,
-    "nome": "Nome da ONG",
-    "subtitulo": "Exemplo: Banco de Sangue",
-    "localizacao": "Fortaleza, CE",
-    "descricao": "Somos um Hemocentro (banco de sangue) para cães e gatos que ajudam outros animais em casos de emergência e procedimentos cirúrgicos.",
+    "nome": "Hemovet Ceará",
+    "subtitulo": "Banco de Sangue Animal",
+    "localizacao": "Fortaleza, CE - Meireles",
+    "descricao": "Somos um Hemocentro (banco de sangue) para cães e gatos que ajudam outros animais em casos de emergência e procedimentos cirúrgicos. Salvamos vidas diariamente!",
     "tags": ["Instagram", "Facebook", "WhatsApp", "Site"],
-    "logo": "🐱"
+    "logo": "🩸",
+    "links": {
+      "instagram": "https://instagram.com/hemovetce",
+      "facebook": "https://facebook.com/hemovetceara",
+      "whatsapp": "https://wa.me/5585988888888",
+      "site": "https://hemovet.com.br"
+    },
+    "contatos": {
+      "email": "contato@hemovet.com.br",
+      "telefone": "(85) 3333-3333"
+    },
+    "doacoes": {
+      "pix": "hemovet@email.com",
+      "banco": "Caixa Econômica - Ag: 0001 C/C: 1234-5"
+    }
   },
   {
     "id": 3,
-    "nome": "Nome da ONG",
-    "subtitulo": "Exemplo: Resgate e Adoção",
-    "localizacao": "Fortaleza, CE",
+    "nome": "Cão Sem Dono",
+    "subtitulo": "Resgate e Adoção",
+    "localizacao": "Fortaleza, CE - Messejana",
     "descricao": "Fazemos o resgate e cuidamos de cães e gatos em situação de abandono e maus tratos, buscando dar uma segunda chance com uma família amorosa.",
     "tags": ["Instagram", "Facebook", "WhatsApp"],
-    "logo": "🐕"
+    "logo": "🐕",
+    "links": {
+      "instagram": "https://instagram.com/caosemdono",
+      "facebook": "https://facebook.com/caosemdono",
+      "whatsapp": "https://wa.me/5585977777777"
+    },
+    "contatos": {
+      "email": "adocao@caosemdono.org",
+      "telefone": "(85) 97777-7777"
+    },
+    "doacoes": {
+      "pix": "caosemdono.pix@gmail.com",
+      "banco": "Bradesco - Ag: 3456 C/C: 7890-1"
+    }
   },
   {
     "id": 4,
-    "nome": "Nome da ONG",
-    "subtitulo": "Exemplo: Alimentação e Cuidados",
-    "localizacao": "Fortaleza, CE",
-    "descricao": "Nosso objetivo é dar dignidade aos cães e gatos em situação de rua através da alimentação natural e cuidados veterinários.",
+    "nome": "Patinhas Carentes",
+    "subtitulo": "Alimentação e Cuidados",
+    "localizacao": "Fortaleza, CE - Centro",
+    "descricao": "Nosso objetivo é dar dignidade aos cães e gatos em situação de rua através da alimentação natural e cuidados veterinários. Atendemos mais de 200 animais mensalmente.",
     "tags": ["Instagram", "WhatsApp", "Site"],
-    "logo": "🐕"
+    "logo": "🐾",
+    "links": {
+      "instagram": "https://instagram.com/patinhascarentes",
+      "whatsapp": "https://wa.me/5585966666666",
+      "site": "https://patinhascarentes.org"
+    },
+    "contatos": {
+      "email": "ajude@patinhascarentes.org",
+      "telefone": "(85) 96666-6666"
+    },
+    "doacoes": {
+      "pix": "patinhas@pix.com",
+      "banco": "Itaú - Ag: 8901 C/C: 23456-7"
+    }
   }
 ]

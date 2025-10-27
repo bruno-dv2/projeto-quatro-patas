@@ -1,3 +1,7 @@
+'use client';
+
+import { GAEvent } from './GoogleAnalytics';
+
 export default function CardOngs({ ong }) {
   const coresTag = {
     "Instagram": "bg-pink-500",
@@ -6,8 +10,27 @@ export default function CardOngs({ ong }) {
     "Site": "bg-gray-700"
   };
 
+  // Rastrear clique no card
+  const handleCardClick = () => {
+    GAEvent.clickOngCard(ong.nome, ong.id);
+  };
+
+  // Rastrear clique nas redes sociais
+  const handleSocialClick = (socialNetwork) => {
+    GAEvent.clickOngSocial(ong.nome, socialNetwork);
+    
+    // Aqui pode adicionar a lógica para abrir o link real
+    // Por exemplo:
+    // if (ong.links && ong.links[socialNetwork.toLowerCase()]) {
+    //   window.open(ong.links[socialNetwork.toLowerCase()], '_blank');
+    // }
+  };
+
   return (
-    <div className="bg-azul-light rounded-lg p-6 hover:shadow-xl transition">
+    <div 
+      className="bg-azul-light rounded-lg p-6 hover:shadow-xl transition cursor-pointer"
+      onClick={handleCardClick}
+    >
       {/* Logo e Nome */}
       <div className="flex items-center gap-4 mb-4">
         <div className="text-5xl">{ong.logo}</div>
@@ -28,15 +51,19 @@ export default function CardOngs({ ong }) {
         {ong.descricao}
       </p>
 
-      {/* Tags */}
+      {/* Tags - Com tracking individual */}
       <div className="flex flex-wrap gap-2">
         {ong.tags.map((tag, index) => (
-          <span 
+          <button
             key={index}
-            className={`${coresTag[tag]} text-white text-xs px-3 py-1 rounded-full font-semibold`}
+            onClick={(e) => {
+              e.stopPropagation(); // Evita duplo tracking
+              handleSocialClick(tag);
+            }}
+            className={`${coresTag[tag]} text-white text-xs px-3 py-1 rounded-full font-semibold hover:opacity-90 transition`}
           >
             {tag}
-          </span>
+          </button>
         ))}
       </div>
     </div>

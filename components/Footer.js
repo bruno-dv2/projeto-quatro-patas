@@ -42,9 +42,9 @@ export default function Footer() {
             </div>
           </div>
           <div className="grid grid-cols-3 gap-3 mt-2 text-xs text-center text-gray-300">
-            <p>Pelz</p>
-            <p>Animale</p>
-            <p>ProCampo</p>
+            <p>Unifor</p>
+            <p>Unifor</p>
+            <p>Unifor</p>
           </div>
         </div>
 

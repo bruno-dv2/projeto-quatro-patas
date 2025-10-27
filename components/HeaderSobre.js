@@ -25,7 +25,7 @@ export default function HeaderSobre() {
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">O QUE NÓS</h1>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">FAZEMOS?</h2>
           <p className="text-lg sm:text-xl max-w-2xl mx-auto mb-6">
-            Encontramos ONGs confiáveis para si, apadrinhar
+            Encontramos ONGs confiáveis para você apadrinhar
           </p>
           
           <Link 

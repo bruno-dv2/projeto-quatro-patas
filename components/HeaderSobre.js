@@ -7,7 +7,7 @@ export default function HeaderSobre() {
       {/* Menu Superior */}
       <nav className="flex justify-between items-center px-4 sm:px-6 lg:px-8 py-4 bg-[#3B7DD6]">
         <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition flex-shrink-0">
-          <Image src="/logo.png" alt="4 Patas" width={40} height={40} />
+          <Image src="/logo.svg" alt="4 Patas" width={40} height={40} />
           <h1 className="text-xl sm:text-2xl font-bold whitespace-nowrap">4 Patas</h1>
         </Link>
         <Link 

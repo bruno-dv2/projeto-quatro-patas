@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import { Mail, Globe } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -9,15 +9,30 @@ export default function Footer() {
         <div>
           <h3 className="text-xl font-bold mb-4 text-[#5DADE2]">4Patas</h3>
           <p className="text-sm leading-relaxed text-gray-300">
-            Um diretório criado manualmente, sem cadastros automáticos. Cada ONG é pessoalmente verificada por nossa equipe.
+            Um hub criado com propósito e cuidado, onde cada ONG é verificada manualmente para garantir transparência e confiança.
           </p>
         </div>
 
         {/* Coluna 2 - Contatos */}
         <div>
           <h3 className="text-xl font-bold mb-4 text-[#5DADE2]">Contatos</h3>
-          <p className="text-sm text-gray-300 mb-2">projeto4patas@gmail.com</p>
-          <p className="text-sm text-gray-300">@projeto4patas_</p>
+          <a  
+            href="mailto:projeto4patasunifor@gmail.com"
+            className="text-sm text-gray-300 mb-2 flex items-center gap-2 hover:text-[#5DADE2] transition-colors"
+          >
+            <Mail size={16} className="text-[#5DADE2]" />
+            projeto4patasunifor@gmail.com
+          </a>
+
+          <a
+            href="https://www.instagram.com/projeto4patas_"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-gray-300 flex items-center gap-2 hover:text-[#5DADE2] transition-colors"
+          >
+        <Globe size={16} className="text-[#5DADE2]" />
+        @projeto4patas_
+      </a>
         </div>
 
         {/* Coluna 3 - Transparência */}

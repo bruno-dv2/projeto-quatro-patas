@@ -2,12 +2,13 @@ import HeaderSobre from '@/components/HeaderSobre';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
 
+
 export default function Sobre() {
   const time = [
     {
       nome: "João Pedro",
       cargo: "Análise e Desenvolvimento de Sistemas",
-      descricao: "Tem 20 anos e ama programação, com foco em desenvolvimento front-end. Atualmente estudando na área Tecnologia",
+      descricao: "Tenho 20 anos e sou desenvolvedor full-stack. Acredito que a tecnologia tem o poder de conectar pessoas e transformar o mundo. É por isso que me dedico a criar soluções que façam diferença.",
       foto: "/images/joaopedro.png",
       linkedin: "https://www.linkedin.com/in/joaopedrosholanda",
       github: "#"
@@ -93,23 +94,20 @@ export default function Sobre() {
         </div>
       </section>
 
-      {/* Seção Nosso Objetivo */}
-      <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-azul-dark mb-10 md:mb-12">
             Nosso Objetivo
           </h2>
 
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-            <div className="w-full md:w-1/2 grid grid-cols-2 gap-4">
-              <div className="h-40 sm:h-48 bg-gray-300 rounded-lg"></div>
-              <div className="h-40 sm:h-48 bg-gray-300 rounded-lg"></div>
+            <div className="md:w-1/3 flex justify-center">
+              <Image src="/icons/objetivo.png" alt="4 Patas" width={200} height={10} />
             </div>
-            <div className="md:w-1/2 space-y-4 text-center md:text-left">
+            <div className="md:w-2/3 space-y-4 text-center md:text-left">
               <p className="text-gray-700 leading-relaxed">
-                Pretendemos criar uma plataforma online que sirva como uma
-                central de divulgações para ONGs e serviços voltados
-                para o universo pet (focado em cachorro e gato).
+                O 4 Patas é uma plataforma online que atua como uma central de divulgações para ONGs e serviços dedicados ao universo pet, 
+                conectando pessoas e instituições voltadas ao cuidado de cães e gatos.
               </p>
               <p className="text-gray-700 leading-relaxed">
                 Nosso objetivo é facilitar o acesso a informação deste universo pet,

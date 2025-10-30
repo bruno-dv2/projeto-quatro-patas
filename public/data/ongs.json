@@ -24,16 +24,15 @@
   {
     "id": 2,
     "nome": "Adote um Bigode",
-    "subtitulo": "Adote um Bigode!",
-    "localizacao": "Fortaleza, CE - Meireles",
-    "descricao": "Alimentamos +100 animais, castramos e promovemos adoção dos que cruzam nosso caminho",
-    "tags": ["Instagram", "Facebook", "WhatsApp", "Site"],
+    "subtitulo": "Alimentamos +100 animais, castramos e promovemos adoção dos que cruzam nosso caminho",
+    "localizacao": "Fortaleza, CE",
+    "descricao": "Alimentamos diariamente mais de 100 animais. São dois pontos de abandono na cidade de Fortaleza. São 90 kg de ração por semana. Além disso resgatamos os mais debilitados e reabilitamos para irem para adoção.  Também realizamos a castração dos animais para evitar a superpopulação.  ",
+    "tags": ["Instagram", "Email", "Linktree"],
     "logo": "/ongslogos/adoteumbigodelogo.png",
     "links": {
       "instagram": "https://www.instagram.com/adoteumbigodeceara",
-      "facebook": "https://facebook.com/",
-      "whatsapp": "https://wa.me/5585988888888",
-      "site": "https://www.amazon.com.br/hz/wishlist/ls/1SHZVMK90W9O4?ref_=wl_share"
+      "email" : "Adoteumbigodece@gmail.com",
+      "linktree": "linktr.ee/adoteumbigodece"
     },
     "contatos": {
       "email": "adoteumbigodece@gmail.com",
@@ -49,7 +48,7 @@
     "nome": "ONG Abrace",
     "subtitulo": "ABRACE - Uma causa animal 🐶🐱",
     "localizacao": "Fortaleza e Eusébio, CE ",
-    "descricao": "Fazemos o resgate e cuidamos de cães e gatos em situação de abandono e maus tratos, buscando dar uma segunda chance com uma família amorosa.",
+    "descricao": "A ONG ABRACE, localizada em Fortaleza-CE, atua há mais de 13 anos no resgate, cuidado e adoção de cães e gatos em situação de abandono. Fundada e presidida por Cristiane, a iniciativa oferece acolhimento, tratamento veterinário e busca por famílias que possam proporcionar amor e um lar definitivo.",
     "tags": ["Instagram", "Facebook", "WhatsApp"],
     "logo": "/ongslogos/ongabracelogo.png",
     "links": {

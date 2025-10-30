@@ -2,16 +2,15 @@
   {
     "id": 1,
     "nome": "Animais Universitários",
-    "subtitulo": "Amor em forma de Gato",
-    "localizacao": "Fortaleza, CE - Pici",
-    "descricao": "Projeto voluntário de assistência aos animais abandonados no Campus do Pici",
-    "tags": ["Instagram", "Facebook", "WhatsApp", "Site"],
+    "subtitulo": "Projeto voluntário de assistência aos animais abandonados no Campus do Pici",
+    "localizacao": " Fortaleza - CE, UFC - Campus do Pici",
+    "descricao": "Projeto voluntário que atua no Campus do Pici (UFC), promovendo castrações, adoções e cuidados básicos a animais abandonados. A iniciativa é mantida por doações e bazares, sem apoio institucional, e depende de lares temporários para acolher os animais.",
+    "tags": ["Instagram", "Email", "Linktree"],
     "logo": "/ongslogos/animaisuniversitarioslogo.png",
     "links": {
       "instagram": "https://www.instagram.com/animaisuniversitarios",
-      "facebook": "",
-      "whatsapp": "85989079977",
-      "site": "https://drive.google.com/drive/folders/1BfZ9-hiQEn8v1lMf_y7eCtRdcrIqJAqF"
+      "email" : "projetoanimaisuniversitarios@gmail.com",
+      "site": "linktr.ee/animaisuniversitarios"
     },
     "contatos": {
       "email": "contato@gatinhosfortaleza.org",

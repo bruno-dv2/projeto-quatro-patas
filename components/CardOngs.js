@@ -2,13 +2,27 @@
 
 import { GAEvent } from './GoogleAnalytics';
 import Image from 'next/image';
+import { SiInstagram, SiFacebook, SiWhatsapp, SiLinktree } from 'react-icons/si';
+import { FiMail, FiGlobe } from 'react-icons/fi'; 
+
 
 export default function CardOngs({ ong }) {
   const coresTag = {
     "Instagram": "bg-pink-500",
     "Facebook": "bg-blue-600",
     "WhatsApp": "bg-green-500",
+    "Email" : "bg-red-400",
+    "Linktree": "bg-green-300",
     "Site": "bg-gray-700"
+  };
+
+  const iconesTag = {
+  Instagram: <SiInstagram size={14} />,
+  Facebook: <SiFacebook size={14} />,
+  WhatsApp: <SiWhatsapp size={14} />,
+  Email: <FiMail size={14} />,
+  Linktree: <SiLinktree size={14} />,
+  Site: <FiGlobe size={14} />,
   };
 
   // Rastrear clique no card
@@ -61,7 +75,7 @@ export default function CardOngs({ ong }) {
 
   return (
     <div 
-      className="bg-azul-light rounded-lg p-6 hover:shadow-xl transition cursor-pointer"
+      className="bg-azul-light rounded-lg p-6 hover:shadow-xl transition"
       onClick={handleCardClick}
     >
       {/* Logo e Nome */}
@@ -82,7 +96,14 @@ export default function CardOngs({ ong }) {
       {/* Localização */}
       <div className="flex items-center gap-2 mb-4 text-gray-700">
         <span>📍</span>
-        <span className="text-sm">{ong.localizacao}</span>
+        <a
+          href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(ong.localizacao)}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-sm  hover:underline text-blue-800 transition hover:text-blue-600"
+        >
+          {ong.localizacao}
+        </a>
       </div>
 
       {/* Descrição */}
@@ -96,10 +117,10 @@ export default function CardOngs({ ong }) {
           <button
             key={index}
             onClick={(e) => handleSocialClick(e, tag)}
-            className={`${coresTag[tag]} text-white text-xs px-3 py-1 rounded-full font-semibold hover:opacity-90 transition`}
+            className={`${coresTag[tag]} text-white text-xs px-3 py-1 rounded-full font-semibold flex items-center gap-1 transform transition-all duration-200 hover:scale-110 cursor-pointer`}
             aria-label={`Abrir ${tag} da ${ong.nome}`}
           >
-            {tag}
+            {iconesTag[tag]} <span>{tag}</span>
           </button>
         ))}
       </div>

@@ -44,7 +44,7 @@ export default function Header() {
           className="text-lg font-medium hover:underline"
           onClick={() => handleButtonClick('Menu Sobre')}
         >
-          Sobre
+          Sobre o projeto
         </Link>
       </nav>
 

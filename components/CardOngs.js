@@ -1,9 +1,10 @@
 'use client';
 
+import { useState } from 'react';
 import { GAEvent } from './GoogleAnalytics';
 import Image from 'next/image';
 import { SiInstagram, SiFacebook, SiWhatsapp, SiLinktree } from 'react-icons/si';
-import { FiMail, FiGlobe } from 'react-icons/fi'; 
+import { FiMail, FiGlobe, FiCopy } from 'react-icons/fi'; 
 
 
 export default function CardOngs({ ong }) {
@@ -24,6 +25,9 @@ export default function CardOngs({ ong }) {
   Linktree: <SiLinktree size={14} />,
   Site: <FiGlobe size={14} />,
   };
+
+  const [showEmailPopup, setShowEmailPopup] = useState(false);
+  const [copied, setCopied] = useState(false);
 
   // Rastrear clique no card
   const handleCardClick = () => {
@@ -63,6 +67,15 @@ export default function CardOngs({ ong }) {
       if (socialNetwork === 'WhatsApp') {
         link = formatWhatsAppLink(link);
       }
+
+      if (socialNetwork === "Email") {
+        setShowEmailPopup(true);
+        return;
+      }
+
+      if (!link.startsWith("http") && !link.startsWith("mailto")) {
+        link = `https://${link}`;
+      }
       
       // Abrir em nova aba
       if (link) {
@@ -73,57 +86,91 @@ export default function CardOngs({ ong }) {
     }
   };
 
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText(ong.links.email);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   return (
-    <div 
-      className="bg-azul-light rounded-lg p-6 hover:shadow-xl transition"
-      onClick={handleCardClick}
-    >
-      {/* Logo e Nome */}
-      <div className="flex items-center gap-4 mb-4">
-        <Image 
-          src={ong.logo} 
-          alt={`Logo da ${ong.nome}`}  
-          width={64} 
-          height={64} 
-          className="rounded-full object-cover"
-        />
-        <div>
-          <h3 className="text-2xl font-bold text-azul-dark">{ong.nome}</h3>
-          <p className="text-sm text-gray-600">{ong.subtitulo}</p>
+    <>
+      <div 
+        className="bg-azul-light rounded-lg p-6 hover:shadow-xl transition"
+        onClick={handleCardClick}
+      >
+        {/* Logo e Nome */}
+        <div className="flex items-center gap-4 mb-4">
+          <Image 
+            src={ong.logo} 
+            alt={`Logo da ${ong.nome}`}  
+            width={64} 
+            height={64} 
+            className="rounded-full object-cover"
+          />
+          <div>
+            <h3 className="text-2xl font-bold text-azul-dark">{ong.nome}</h3>
+            <p className="text-sm text-gray-600">{ong.subtitulo}</p>
+          </div>
+        </div>
+
+        {/* Localização */}
+        <div className="flex items-center gap-2 mb-4 text-gray-700">
+          <span>📍</span>
+          <a
+            href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(ong.localizacao)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm  hover:underline text-blue-800 transition hover:text-blue-600"
+          >
+            {ong.localizacao}
+          </a>
+        </div>
+
+        {/* Descrição */}
+        <p className="text-gray-700 mb-6 text-sm leading-relaxed">
+          {ong.descricao}
+        </p>
+
+        {/* Tags - Com tracking individual */}
+        <div className="flex flex-wrap gap-2">
+          {ong.tags.map((tag, index) => (
+            <button
+              key={index}
+              onClick={(e) => handleSocialClick(e, tag)}
+              className={`${coresTag[tag]} text-white text-xs px-3 py-1 rounded-full font-semibold flex items-center gap-1 transform transition-all duration-200 hover:scale-110 cursor-pointer`}
+              aria-label={`Abrir ${tag} da ${ong.nome}`}
+            >
+              {iconesTag[tag]} <span>{tag}</span>
+            </button>
+          ))}
         </div>
       </div>
 
-      {/* Localização */}
-      <div className="flex items-center gap-2 mb-4 text-gray-700">
-        <span>📍</span>
-        <a
-          href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(ong.localizacao)}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-sm  hover:underline text-blue-800 transition hover:text-blue-600"
-        >
-          {ong.localizacao}
-        </a>
-      </div>
+      {showEmailPopup && (
+        <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50">
+          <div className="bg-white rounded-xl shadow-2xl border border-gray-200 p-6 w-80 text-center animate-fadeIn">
+            <h3 className="text-lg font-semibold text-gray-800 mb-2">E-mail de contato</h3>
+            <p className="text-gray-600 mb-4">{ong.links.email}</p>
 
-      {/* Descrição */}
-      <p className="text-gray-700 mb-6 text-sm leading-relaxed">
-        {ong.descricao}
-      </p>
+            <div className="flex justify-center gap-3">
+              <button
+                onClick={handleCopyEmail}
+                className="bg-blue-600 text-white px-4 py-2 rounded-md flex items-center gap-2 hover:bg-blue-700 transition"
+              >
+                <FiCopy size={16} />
+                {copied ? "Copiado!" : "Copiar"}
+              </button>
 
-      {/* Tags - Com tracking individual */}
-      <div className="flex flex-wrap gap-2">
-        {ong.tags.map((tag, index) => (
-          <button
-            key={index}
-            onClick={(e) => handleSocialClick(e, tag)}
-            className={`${coresTag[tag]} text-white text-xs px-3 py-1 rounded-full font-semibold flex items-center gap-1 transform transition-all duration-200 hover:scale-110 cursor-pointer`}
-            aria-label={`Abrir ${tag} da ${ong.nome}`}
-          >
-            {iconesTag[tag]} <span>{tag}</span>
-          </button>
-        ))}
-      </div>
-    </div>
+              <button
+                onClick={() => setShowEmailPopup(false)}
+                className="bg-gray-200 text-gray-800 px-4 py-2 rounded-md hover:bg-gray-300 transition"
+              >
+                Fechar
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
   );
 }

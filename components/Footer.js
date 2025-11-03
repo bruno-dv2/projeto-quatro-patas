@@ -1,4 +1,5 @@
 import { Mail, Globe } from "lucide-react";
+import { SiInstagram } from "react-icons/si";
 import Image from "next/image";
 
 export default function Footer() {
@@ -31,7 +32,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="text-sm text-gray-300 mb-2 flex justify-center items-center gap-2 hover:text-[#5DADE2] transition-colors"
           >
-        <Globe size={16} className="text-[#5DADE2]" />
+        <SiInstagram size={16} className="text-[#5DADE2]" />
         @projeto4patas._
       </a>
         </div>

@@ -28,6 +28,26 @@ export default function CardOngs({ ong }) {
     Tiktok: <SiTiktok size={14} />
   };
 
+  const iconesNecessidades = {
+    "Ração": "🍖",
+    "Medicamentos": "💊",
+    "Sachês": "🥫",
+    "Produtos de limpeza": "🧽",
+    "Produtos para pets": "🐾",
+    "Roupas": "👕",
+    "Livros": "📚",
+    "Decorações": "🖼️",
+    "Outros itens para o bazar": "🎁",
+    "Castração": "✂️",
+    "Financeira": "💰",
+    "Apoio financeiro para custear alimentação, vacinas e cuidados veterinários": "💵",
+    "Maior doação de recursos": "🤝",
+    "Necessidade de um espaço maior e mais estruturado": "🏠",
+    "Entrada financeira constante": "🔁",
+    "Lar temporário para abrigar os animais resgatados até a adoção": "🏡"
+  };
+
+
   const [showEmailPopup, setShowEmailPopup] = useState(false);
   const [copied, setCopied] = useState(false);
 
@@ -133,9 +153,32 @@ export default function CardOngs({ ong }) {
           {ong.descricao}
         </p>
 
-        <div className='my-7 bg-yellow-100 text-sm text rounded-2xl p-2'>
-          <strong className='text-yellow-900'>Principais necesidades: </strong>
-        </div>
+        {Array.isArray(ong.necessidades) && ong.necessidades.length > 0 && (
+          <div className="my-7 bg-yellow-100 text-sm rounded-2xl p-3">
+            <strong className="text-yellow-900">Principais necessidades: </strong>
+            <ul className="mt-2 flex flex-wrap gap-2">
+              {ong.necessidades.slice(0, 10).map((item, idx) => (
+                <li
+                  key={idx}
+                  className="bg-yellow-200 text-yellow-900 px-1 py-1 rounded-full text-xs"
+                >
+                  <span className='me-1'>{iconesNecessidades[item] || "✨"}</span>
+                  {item}
+                </li>
+              ))}
+
+              {/* Se houver mais que 7 itens, mostra um indicador "+N" */}
+              {ong.necessidades.length > 10 && (
+                <li
+                  className="bg-yellow-200 text-yellow-900 px-3 py-1 rounded-full"
+                  title={ong.necessidades.slice(10).join(", ")}
+                >
+                  +{ong.necessidades.length - 10}
+                </li>
+              )}
+            </ul>
+          </div>
+        )}
 
         {/* Tags - Com tracking individual */}
         <div className="flex flex-wrap gap-2">

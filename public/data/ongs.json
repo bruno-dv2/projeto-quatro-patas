@@ -5,7 +5,7 @@
     "subtitulo": "Projeto voluntário de assistência aos animais abandonados no Campus do Pici",
     "localizacao": " Fortaleza - CE, UFC - Campus do Pici",
     "descricao": "Projeto voluntário que atua no Campus do Pici (UFC), promovendo castrações, adoções e cuidados básicos a animais abandonados. A iniciativa é mantida por doações e bazares, sem apoio institucional, e depende de lares temporários para acolher os animais.",
-    "necessidades" : [],
+    "necessidades" : [ "Ração","Medicamentos","Produtos de limpeza","Produtos para pets","Roupas","Livros","Decorações","Outros itens para o bazar"],
     "tags": ["Instagram", "Email", "Linktree"],
     "logo": "/ongslogos/animaisuniversitarioslogo.png",
     "links": {
@@ -28,7 +28,7 @@
     "subtitulo": "Alimentamos +100 animais, castramos e promovemos adoção dos que cruzam nosso caminho",
     "localizacao": "Fortaleza, CE",
     "descricao": "Alimentamos diariamente mais de 100 animais. São dois pontos de abandono na cidade de Fortaleza. São 90 kg de ração por semana. Além disso resgatamos os mais debilitados e reabilitamos para irem para adoção.  Também realizamos a castração dos animais para evitar a superpopulação.  ",
-    "necessidades" : [],
+    "necessidades" : ["Ração", "Castração"],
     "tags": ["Instagram", "Email", "Linktree"],
     "logo": "/ongslogos/adoteumbigodelogo.png",
     "links": {
@@ -50,7 +50,7 @@
     "subtitulo": "ABRACE - Uma causa animal 🐶🐱",
     "localizacao": "Fortaleza e Eusébio, CE ",
     "descricao": "A ONG ABRACE, localizada em Fortaleza-CE, atua há mais de 13 anos no resgate, cuidado e adoção de cães e gatos em situação de abandono. Fundada e presidida por Cristiane, a iniciativa oferece acolhimento, tratamento veterinário e busca por famílias que possam proporcionar amor e um lar definitivo.",
-    "necessidades" : [],
+    "necessidades" : [ "Maior doação de recursos", "Necessidade de um espaço maior e mais estruturado", "Entrada financeira constante"],
     "tags": ["Instagram", "Email"],
     "logo": "/ongslogos/ongabracelogo.png",
     "links": {
@@ -72,7 +72,7 @@
     "subtitulo": "Gatos resgatados com amor, cuidados e encaminhados para adoção responsável.",
     "localizacao": "Fortaleza, CE - Rua Miraima, 105",
     "descricao": "Trabalhamos pelo resgate, cuidado e adoção responsável de gatos, garantindo que cada animal encontre um lar seguro, com tutores conscientes e comprometidos com o bem-estar animal.",
-    "necessidades" : [],
+    "necessidades" : ["Ajuda financeira para procedimentos veterinários", "Ração","Medicamentos","Sachês"],
     "tags": ["Instagram", "Email", "WhatsApp"],
     "logo": "/ongslogos/dorycatslogo.jpg",
     "links": {
@@ -95,7 +95,7 @@
     "subtitulo": "Atuamos com amor pela causa animal, conectando quem deseja ajudar com quem mais precisa de apoio.",
     "localizacao": "Fortaleza, CE",
     "descricao": "Trabalhamos para salvar vidas e devolver dignidade a animais em situação de abandono, oferecendo cuidados, atenção e encaminhamento para adoções responsáveis.",
-    "necessidades" : [],
+    "necessidades" : [ "Lar temporário para abrigar os animais resgatados até a adoção","Apoio financeiro para custear alimentação, vacinas e cuidados veterinários"],
     "tags": ["Instagram", "WhatsApp", "Site", "Tiktok"],
     "logo": "/ongslogos/redederesgatelogo.jpg",
     "links": {
@@ -119,7 +119,7 @@
     "subtitulo": "Instituto Causa Pet® | Lar Temporário",
     "localizacao": "Fortaleza, CE ",
     "descricao": "A missão da causa pet é resgatar, cuidar e reabilitar animais em situação de vulnerabilidade, buscando lares responsáveis e amorosos para eles. Além disso, tem como objetivo conscientizar a sociedade sobre a importância da posse responsável, da castração, e do respeito a todos os seres vivos, contribuindo para um mundo mais justo e compassivo com os animais.",
-    "necessidades" : [],
+    "necessidades" : ["Financeira"],
     "tags": ["Instagram", "Facebook", "Linktree" ],
     "logo": "/ongslogos/causapetlogo.webp",
     "links": {

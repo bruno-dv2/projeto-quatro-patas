@@ -5,6 +5,7 @@
     "subtitulo": "Projeto voluntário de assistência aos animais abandonados no Campus do Pici",
     "localizacao": " Fortaleza - CE, UFC - Campus do Pici",
     "descricao": "Projeto voluntário que atua no Campus do Pici (UFC), promovendo castrações, adoções e cuidados básicos a animais abandonados. A iniciativa é mantida por doações e bazares, sem apoio institucional, e depende de lares temporários para acolher os animais.",
+    "necessidades" : [],
     "tags": ["Instagram", "Email", "Linktree"],
     "logo": "/ongslogos/animaisuniversitarioslogo.png",
     "links": {
@@ -27,6 +28,7 @@
     "subtitulo": "Alimentamos +100 animais, castramos e promovemos adoção dos que cruzam nosso caminho",
     "localizacao": "Fortaleza, CE",
     "descricao": "Alimentamos diariamente mais de 100 animais. São dois pontos de abandono na cidade de Fortaleza. São 90 kg de ração por semana. Além disso resgatamos os mais debilitados e reabilitamos para irem para adoção.  Também realizamos a castração dos animais para evitar a superpopulação.  ",
+    "necessidades" : [],
     "tags": ["Instagram", "Email", "Linktree"],
     "logo": "/ongslogos/adoteumbigodelogo.png",
     "links": {
@@ -35,7 +37,6 @@
       "linktree": "linktr.ee/adoteumbigodece"
     },
     "contatos": {
-      "email": "adoteumbigodece@gmail.com",
       "telefone": "(85) 3333-3333"
     },
     "doacoes": {
@@ -49,12 +50,12 @@
     "subtitulo": "ABRACE - Uma causa animal 🐶🐱",
     "localizacao": "Fortaleza e Eusébio, CE ",
     "descricao": "A ONG ABRACE, localizada em Fortaleza-CE, atua há mais de 13 anos no resgate, cuidado e adoção de cães e gatos em situação de abandono. Fundada e presidida por Cristiane, a iniciativa oferece acolhimento, tratamento veterinário e busca por famílias que possam proporcionar amor e um lar definitivo.",
-    "tags": ["Instagram", "Facebook", "WhatsApp"],
+    "necessidades" : [],
+    "tags": ["Instagram", "Email"],
     "logo": "/ongslogos/ongabracelogo.png",
     "links": {
       "instagram": "https://www.instagram.com/ong.abrace",
-      "facebook": "https://facebook.com/caosemdono",
-      "whatsapp": "https://wa.me/5585977777777"
+      "email" : "contato.abrace123@gmail.com"
     },
     "contatos": {
       "email": "adocao@caosemdono.org",
@@ -68,15 +69,16 @@
   {
     "id": 4,
     "nome": "Dory Cats",
-    "subtitulo": "Alimentação e Cuidados",
-    "localizacao": "Fortaleza, CE - ",
-    "descricao": "Gatos resgatados para adoção. Não recebemos animais",
-    "tags": ["Instagram", "WhatsApp", "Site"],
+    "subtitulo": "Gatos resgatados com amor, cuidados e encaminhados para adoção responsável.",
+    "localizacao": "Fortaleza, CE - Rua Miraima, 105",
+    "descricao": "Trabalhamos pelo resgate, cuidado e adoção responsável de gatos, garantindo que cada animal encontre um lar seguro, com tutores conscientes e comprometidos com o bem-estar animal.",
+    "necessidades" : [],
+    "tags": ["Instagram", "Email", "WhatsApp"],
     "logo": "/ongslogos/dorycatslogo.jpg",
     "links": {
       "instagram": "https://www.instagram.com/dorycats",
-      "whatsapp": "https://wa.me/5585966666666",
-      "site": "https://patinhascarentes.org"
+      "whatsapp": "https://wa.me/5585988164943",
+      "email": "dorycats10@gmail.com"
     },
     "contatos": {
       "email": "dorycats10@gmail.com",
@@ -90,15 +92,17 @@
   {
     "id": 5,
     "nome": "Rede de Resgate",
-    "subtitulo": "❤️ Atuamos com amor pela causa animal",
-    "localizacao": "Fortaleza, CE - ",
-    "descricao": "🔗 Conectamos quem pode ajudar a quem precisa 🚫 Sem abrigo",
-    "tags": ["Instagram", "WhatsApp", "Site"],
+    "subtitulo": "Atuamos com amor pela causa animal, conectando quem deseja ajudar com quem mais precisa de apoio.",
+    "localizacao": "Fortaleza, CE",
+    "descricao": "Trabalhamos para salvar vidas e devolver dignidade a animais em situação de abandono, oferecendo cuidados, atenção e encaminhamento para adoções responsáveis.",
+    "necessidades" : [],
+    "tags": ["Instagram", "WhatsApp", "Site", "Tiktok"],
     "logo": "/ongslogos/redederesgatelogo.jpg",
     "links": {
       "instagram": "https://www.instagram.com/redederesgate_24",
-      "whatsapp": "https://wa.me/5585966666666",
-      "site": "https://rifa.digital/s/gZ7Xy8qBK9g?fbclid=PAZXh0bgNhZW0CMTEAAafLZUxc88iqk5QuqMdt3Vf3B_AA-ZqNVmfQN_eaUmtrTVjIiXa1qkhpi-mGRA_aem_yfMPmf4LLFoho81hUOZguA"
+      "whatsapp": "https://wa.me/5585998068608",
+      "site": "https://rifa.digital/s/gZ7Xy8qBK9g?fbclid=PAZXh0bgNhZW0CMTEAAafLZUxc88iqk5QuqMdt3Vf3B_AA-ZqNVmfQN_eaUmtrTVjIiXa1qkhpi-mGRA_aem_yfMPmf4LLFoho81hUOZguA",
+      "tiktok": "https://www.tiktok.com/@redederesgate_24"
     },
     "contatos": {
       "email": "rederesgate24@outlook.com",
@@ -114,13 +118,15 @@
     "nome": "Causa Pet",
     "subtitulo": "Instituto Causa Pet® | Lar Temporário",
     "localizacao": "Fortaleza, CE ",
-    "descricao": "⛑1.485 Resgates 🐶🐱1.241 Adoções 📈1.816 Castrações",
-    "tags": ["Instagram", "WhatsApp", "Site"],
+    "descricao": "A missão da causa pet é resgatar, cuidar e reabilitar animais em situação de vulnerabilidade, buscando lares responsáveis e amorosos para eles. Além disso, tem como objetivo conscientizar a sociedade sobre a importância da posse responsável, da castração, e do respeito a todos os seres vivos, contribuindo para um mundo mais justo e compassivo com os animais.",
+    "necessidades" : [],
+    "tags": ["Instagram", "Facebook", "Linktree" ],
     "logo": "/ongslogos/causapetlogo.webp",
     "links": {
       "instagram": "https://www.instagram.com/causapet",
       "whatsapp": "https://wa.me/5585966666666",
-      "site": "https://rifa.digital/s/K59lxIAuiDZ"
+      "linktree": "linktr.ee/CausaPet",
+      "facebook" : "https://www.facebook.com/InstitutoCausaPet/"
     },
     "contatos": {
       "email": "queroajudar@causapet.com",

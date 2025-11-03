@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { GAEvent } from './GoogleAnalytics';
 import Image from 'next/image';
-import { SiInstagram, SiFacebook, SiWhatsapp, SiLinktree } from 'react-icons/si';
+import { SiInstagram, SiFacebook, SiWhatsapp, SiLinktree, SiTiktok } from 'react-icons/si';
 import { FiMail, FiGlobe, FiCopy } from 'react-icons/fi'; 
 
 
@@ -14,16 +14,18 @@ export default function CardOngs({ ong }) {
     "WhatsApp": "bg-green-500",
     "Email" : "bg-red-400",
     "Linktree": "bg-green-300",
-    "Site": "bg-gray-700"
+    "Site": "bg-gray-700",
+    "Tiktok" : "bg-cyan-300"
   };
 
   const iconesTag = {
-  Instagram: <SiInstagram size={14} />,
-  Facebook: <SiFacebook size={14} />,
-  WhatsApp: <SiWhatsapp size={14} />,
-  Email: <FiMail size={14} />,
-  Linktree: <SiLinktree size={14} />,
-  Site: <FiGlobe size={14} />,
+    Instagram: <SiInstagram size={14} />,
+    Facebook: <SiFacebook size={14} />,
+    WhatsApp: <SiWhatsapp size={14} />,
+    Email: <FiMail size={14} />,
+    Linktree: <SiLinktree size={14} />,
+    Site: <FiGlobe size={14} />,
+    Tiktok: <SiTiktok size={14} />
   };
 
   const [showEmailPopup, setShowEmailPopup] = useState(false);
@@ -130,6 +132,10 @@ export default function CardOngs({ ong }) {
         <p className="text-gray-700 mb-6 text-sm leading-relaxed">
           {ong.descricao}
         </p>
+
+        <div className='my-7 bg-yellow-100 text-sm text rounded-2xl p-2'>
+          <strong className='text-yellow-900'>Principais necesidades: </strong>
+        </div>
 
         {/* Tags - Com tracking individual */}
         <div className="flex flex-wrap gap-2">

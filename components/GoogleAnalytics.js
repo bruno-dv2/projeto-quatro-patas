@@ -94,6 +94,7 @@ export const GAEvent = {
         event_category: 'engagement',
         event_label: ongName,
         ong_name: ongName,
+        ong_name: ongName,
         ong_id: ongId,
         value: 1
       });

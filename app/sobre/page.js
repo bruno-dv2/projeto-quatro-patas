@@ -24,10 +24,10 @@ export default function Sobre() {
     {
       nome: "Bruno Aguiar",
       cargo: "Análise e Desenvolvimento de Sistemas",
-      descricao: "Tenho 22 anos, desenvolvedor backend apaixonado por animais. No 4Patas encontrei uma forma de usar meu conhecimento para tecnologia para apoiar uma causa social.",
+      descricao: "Tenho 29 anos, desenvolvedor backend apaixonado por animais. No 4Patas encontrei uma forma de usar meu conhecimento para tecnologia para apoiar uma causa social.",
       foto: "/images/bruno.png",
       linkedin: "https://www.linkedin.com/in/bruno-aguiar-santana-dev/",
-      github: "#"
+      github: "https://github.com/bruno-dv2"
     },
     {
       nome: "Saul",

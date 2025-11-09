@@ -76,7 +76,7 @@ export async function GET() {
               fieldName: 'eventName',
               stringFilter: { 
                 matchType: 'EXACT',
-                value: 'click_ong_card' 
+                value: 'click_ong_social' 
               },
             },
           },

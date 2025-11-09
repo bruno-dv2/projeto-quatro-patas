@@ -88,18 +88,6 @@ export default function GoogleAnalytics({ GA_MEASUREMENT_ID }) {
  * Funções auxiliares para rastreamento de eventos personalizados
  */
 export const GAEvent = {
-  clickOngCard: (ongName, ongId) => {
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'click_ong_card', {
-        event_category: 'engagement',
-        event_label: ongName,
-        ong_name: ongName,
-        ong_name: ongName,
-        ong_id: ongId,
-        value: 1
-      });
-    }
-  },
 
   clickOngSocial: (ongName, socialNetwork) => {
     if (typeof window !== 'undefined' && window.gtag) {

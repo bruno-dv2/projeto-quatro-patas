@@ -51,11 +51,6 @@ export default function CardOngs({ ong }) {
   const [showEmailPopup, setShowEmailPopup] = useState(false);
   const [copied, setCopied] = useState(false);
 
-  // Rastrear clique no card
-  const handleCardClick = () => {
-    GAEvent.clickOngCard(ong.nome, ong.id);
-  };
-
   // Formatar link do WhatsApp
   const formatWhatsAppLink = (number) => {
     if (!number) return null;
@@ -116,10 +111,7 @@ export default function CardOngs({ ong }) {
 
   return (
     <>
-      <div 
-        className="bg-azul-light rounded-lg p-6 hover:shadow-xl transition"
-        onClick={handleCardClick}
-      >
+      <div className="bg-azul-light rounded-lg p-6 hover:shadow-xl transition">
         {/* Logo e Nome */}
         <div className="flex items-center gap-4 mb-4">
           <Image 

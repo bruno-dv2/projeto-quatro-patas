@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 /**
  * Componente Google Analytics
  */
-export default function GoogleAnalytics({ GA_MEASUREMENT_ID }) {
+export default function GoogleAnalytics({ measurementId }) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const [consentGranted, setConsentGranted] = useState(false);
@@ -22,7 +22,7 @@ export default function GoogleAnalytics({ GA_MEASUREMENT_ID }) {
       // Atualizar consentimento no Google Analytics se aceito
       if (granted && window.gtag) {
         window.gtag('consent', 'update', {
-          'analytics_storage': 'granted'
+          analytics_storage: 'granted'
         });
       }
     };
@@ -34,30 +34,24 @@ export default function GoogleAnalytics({ GA_MEASUREMENT_ID }) {
 
   // Rastrear mudanças de página
   useEffect(() => {
-    if (pathname && window.gtag && consentGranted && GA_MEASUREMENT_ID) {
-      window.gtag('config', GA_MEASUREMENT_ID, {
+    if (pathname && window.gtag && consentGranted && measurementId) {
+      window.gtag('config', measurementId, {
         page_path: pathname + (searchParams ? `?${searchParams}` : ''),
       });
     }
-  }, [pathname, searchParams, GA_MEASUREMENT_ID, consentGranted]);
+  }, [pathname, searchParams, measurementId, consentGranted]);
 
-  // Validação do ID
-  if (!GA_MEASUREMENT_ID || GA_MEASUREMENT_ID === 'undefined') {
-    return null;
-  }
+  if (!measurementId) return null;
 
   return (
     <>
       {/* Script principal do Google Analytics */}
       <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`}
         strategy="afterInteractive"
         onLoad={() => {
-          const consent = localStorage.getItem('cookieConsent');
-          if (consent === 'accepted' && window.gtag) {
-            window.gtag('consent', 'update', {
-              'analytics_storage': 'granted'
-            });
+          if (localStorage.getItem('cookieConsent') === 'accepted' && window.gtag) {
+            window.gtag('consent', 'update', { analytics_storage: 'granted' });
           }
         }}
       />
@@ -70,14 +64,8 @@ export default function GoogleAnalytics({ GA_MEASUREMENT_ID }) {
           gtag('js', new Date());
           
           const hasConsent = localStorage.getItem('cookieConsent') === 'accepted';
-          
-          gtag('consent', 'default', {
-            'analytics_storage': hasConsent ? 'granted' : 'denied'
-          });
-          
-          gtag('config', '${GA_MEASUREMENT_ID}', {
-            page_path: window.location.pathname,
-          });
+          gtag('consent', 'default', { analytics_storage: hasConsent ? 'granted' : 'denied' });
+          gtag('config', '${measurementId}', { page_path: window.location.pathname });
         `}
       </Script>
     </>

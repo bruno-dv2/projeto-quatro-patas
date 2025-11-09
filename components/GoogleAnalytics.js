@@ -2,12 +2,12 @@
 
 import Script from 'next/script';
 import { usePathname, useSearchParams } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Suspense } from 'react';
 
 /**
  * Componente Google Analytics
  */
-export default function GoogleAnalytics({ measurementId }) {
+function GoogleAnalyticsInner({ measurementId }) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const [consentGranted, setConsentGranted] = useState(false);
@@ -22,7 +22,7 @@ export default function GoogleAnalytics({ measurementId }) {
       // Atualizar consentimento no Google Analytics se aceito
       if (granted && window.gtag) {
         window.gtag('consent', 'update', {
-          analytics_storage: 'granted'
+          'analytics_storage': 'granted'
         });
       }
     };
@@ -69,6 +69,17 @@ export default function GoogleAnalytics({ measurementId }) {
         `}
       </Script>
     </>
+  );
+}
+
+/**
+ * Componente Google Analytics com Suspense boundary
+ */
+export default function GoogleAnalytics({ measurementId }) {
+  return (
+    <Suspense fallback={null}>
+      <GoogleAnalyticsInner measurementId={measurementId} />
+    </Suspense>
   );
 }
 

@@ -96,11 +96,10 @@
     "localizacao": "Fortaleza, CE",
     "descricao": "Trabalhamos para salvar vidas e devolver dignidade a animais em situação de abandono, oferecendo cuidados, atenção e encaminhamento para adoções responsáveis.",
     "necessidades" : [ "Lar temporário para abrigar os animais resgatados até a adoção","Financeira"],
-    "tags": ["Instagram", "WhatsApp", "Site", "Tiktok"],
+    "tags": ["Instagram", "Site", "Tiktok"],
     "logo": "/ongslogos/redederesgatelogo.jpg",
     "links": {
       "instagram": "https://www.instagram.com/redederesgate_24",
-      "whatsapp": "https://wa.me/5585998068608",
       "site": "https://rifa.digital/s/gZ7Xy8qBK9g?fbclid=PAZXh0bgNhZW0CMTEAAafLZUxc88iqk5QuqMdt3Vf3B_AA-ZqNVmfQN_eaUmtrTVjIiXa1qkhpi-mGRA_aem_yfMPmf4LLFoho81hUOZguA",
       "tiktok": "https://www.tiktok.com/@redederesgate_24"
     },

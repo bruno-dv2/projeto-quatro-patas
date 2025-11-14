@@ -80,9 +80,6 @@ export default function Sobre() {
                 Amantes dos animais e seres vivos, optamos por criar um projeto para
                 nossa cadeira de extensão da UNIFOR-Universidade de Fortaleza,
                 localizada no endereço{' '}
-                <a href="https://maps.app.goo.gl/eSBcHp7aLPK1WAC9" className="text-azul-primary underline">
-                  https://maps.app.goo.gl/eSBcHp7aLPK1WAC9
-                </a>,
                 que estivesse voltado para a causa animal.
               </p>
               <p className="text-gray-700 leading-relaxed">

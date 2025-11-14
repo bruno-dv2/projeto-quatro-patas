@@ -1,7 +1,7 @@
-import Header from '@/components/Header';
-import ComoSelecionamos from '@/components/ComoSelecionamos';
-import ListaOngs from '@/components/ListaOngs';
-import Footer from '@/components/Footer';
+import Header from "@/components/Header";
+import ComoSelecionamos from "@/components/ComoSelecionamos";
+import ListaOngs from "@/components/ListaOngs";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (

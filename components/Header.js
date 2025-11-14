@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import Image from 'next/image';
-import { GAEvent } from './GoogleAnalytics';
+import Link from "next/link";
+import Image from "next/image";
+import { GAEvent } from "./GoogleAnalytics";
 
 export default function Header() {
   // Função para rastrear cliques nos botões
@@ -13,12 +13,12 @@ export default function Header() {
   // Função para scroll suave e tracking
   const scrollToOngs = (e) => {
     e.preventDefault();
-    GAEvent.clickMenu('Encontre ONGs');
+    GAEvent.clickMenu("Encontre ONGs");
     GAEvent.viewOngSection();
-    
-    const element = document.getElementById('ongs');
+
+    const element = document.getElementById("ongs");
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -26,23 +26,18 @@ export default function Header() {
     <header className="bg-azul-primary text-white">
       {/* Menu Superior */}
       <nav className="flex justify-between items-center px-8 md:px-64 py-4 bg-[#3B7DD6]">
-        <Link 
-          href="/" 
+        <Link
+          href="/"
           className="flex items-center gap-3 hover:opacity-80 transition flex-shrink-0"
-          onClick={() => handleButtonClick('Logo Home')}
+          onClick={() => handleButtonClick("Logo Home")}
         >
-          <Image 
-            src="/logo.png" 
-            alt="4 Patas Logo" 
-            width={40} 
-            height={40}
-          />
+          <Image src="/logo.png" alt="4 Patas Logo" width={40} height={40} />
           <h1 className="text-2xl font-bold">4 Patas</h1>
         </Link>
-        <Link 
+        <Link
           href="/sobre"
           className="text-lg font-medium hover:underline"
-          onClick={() => handleButtonClick('Menu Sobre')}
+          onClick={() => handleButtonClick("Menu Sobre")}
         >
           Sobre o projeto
         </Link>
@@ -54,7 +49,8 @@ export default function Header() {
         </h2>
 
         <p className="text-lg mb-10 opacity-95">
-          Encontre ONGs confiáveis em Fortaleza dedicadas ao bem-estar de cães e gatos.
+          Encontre ONGs confiáveis em Fortaleza dedicadas ao bem-estar de cães e
+          gatos.
           <br />
           Cada organização é inspecionada minuciosamente por nossa equipe.
         </p>
@@ -66,10 +62,10 @@ export default function Header() {
           >
             Encontre ONGs
           </button>
-          <Link 
-            href="/sobre"
+          <Link
+            href="#ongs-selected"
             className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-azul-primary transition"
-            onClick={() => handleButtonClick('Como validar ONGs')}
+            onClick={() => handleButtonClick("Como validar ONGs")}
           >
             Como validar ONGs
           </Link>
